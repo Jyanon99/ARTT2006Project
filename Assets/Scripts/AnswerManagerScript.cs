@@ -19,9 +19,9 @@ public class AnswerManagerScript : MonoBehaviour
     public float answerBScore = 0;
     public float answerCScore = 1;
 
-    private bool isAnswer = false;
+    public bool isAnswer = false;
 
-    private float  playerScore = 0;
+    public float  playerScore = 0;
 
 
     private void Start()
