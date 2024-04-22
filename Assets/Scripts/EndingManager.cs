@@ -1,7 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.SceneManagement;
 
 public class EndingManager : MonoBehaviour
 {
@@ -38,12 +37,10 @@ public class EndingManager : MonoBehaviour
             if (finalScore >=  5)
             {
                 Debug.Log("Good End!!");
-                SceneManager.LoadScene("goodEnd");
             }
             else
             {
                 Debug.Log("Bad End!!");
-                SceneManager.LoadScene("badEnd");
             }
         }
     }
