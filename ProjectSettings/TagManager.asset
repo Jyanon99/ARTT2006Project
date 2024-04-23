@@ -3,7 +3,10 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - grass_ground
+  - road_ground
+  - wood_ground
   layers:
   - Default
   - TransparentFX

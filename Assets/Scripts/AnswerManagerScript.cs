@@ -23,6 +23,10 @@ public class AnswerManagerScript : MonoBehaviour
 
     public float  playerScore = 0;
 
+    public AudioSource answerSource;
+
+    public AudioClip answerClip;
+
 
     private void Start()
     {
@@ -41,6 +45,8 @@ public class AnswerManagerScript : MonoBehaviour
             Destroy(AnswerC);
             Destroy(titleBoard);
             Debug.Log("Now Score: " + playerScore);
+            answerSource.clip = answerClip;
+            answerSource.Play();
         } 
         else if(AnswerB_script.touchPlayer == true && isAnswer == false)
         {
@@ -50,6 +56,8 @@ public class AnswerManagerScript : MonoBehaviour
             Destroy(AnswerC);
             Destroy(titleBoard);
             Debug.Log("Now Score: " + playerScore);
+            answerSource.clip = answerClip;
+            answerSource.Play();
         }
         else if(AnswerC_script.touchPlayer == true && isAnswer == false)
         {
@@ -59,6 +67,8 @@ public class AnswerManagerScript : MonoBehaviour
             Destroy(AnswerB);
             Destroy(titleBoard);
             Debug.Log("Now Score: " + playerScore);
+            answerSource.clip = answerClip;
+            answerSource.Play();
         }
     }
 }
