@@ -35,7 +35,7 @@ public class AnswerManagerScript : MonoBehaviour
         AnswerC_script = AnswerC.GetComponent<AnswerScript>();
     }
 
-    private void Update()
+    void Update()
     {
         if (AnswerA_script.touchPlayer == true && isAnswer == false)
         {
