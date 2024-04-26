@@ -19,7 +19,7 @@ public class Teleporter : MonoBehaviour
         {
             // 將玩家的位置設定為目標GameObject的位置
             other.gameObject.transform.position = target.transform.position;
-            other.gameObject.transform.rotation = transform.rotation;
+            //other.gameObject.transform.rotation = transform.rotation;
             Debug.Log("tp player");
             ringSource.clip = ringClip;
             ringSource.Play();
