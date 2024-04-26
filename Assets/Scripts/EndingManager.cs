@@ -41,6 +41,8 @@ public class EndingManager : MonoBehaviour
 
         triggerObject1.SetActive(false);
         triggerObject2.SetActive(false);
+        triggerObject3.SetActive(false); 
+        triggerObject4.SetActive(false);
     }
 
     // Update is called once per frame
