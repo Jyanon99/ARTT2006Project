@@ -5,18 +5,6 @@ using UnityEngine.SceneManagement;
 
 public class IntroUI : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-
     public void StartGame()
     {
         SceneManager.LoadScene("opening");
@@ -25,5 +13,15 @@ public class IntroUI : MonoBehaviour
     public void ExitGame()
     {
         Application.Quit();
+    }
+
+    public void GoInfo()
+    {
+        SceneManager.LoadScene("info");
+    }
+
+    public void BackIntro()
+    {
+        SceneManager.LoadScene("intro");
     }
 }
